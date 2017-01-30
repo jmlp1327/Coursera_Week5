@@ -12,6 +12,7 @@
 		4FFE0A4E1E3FC6A200323BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFE0A4C1E3FC6A200323BCD /* Main.storyboard */; };
 		4FFE0A501E3FC6A200323BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFE0A4F1E3FC6A200323BCD /* Assets.xcassets */; };
 		4FFE0A531E3FC6A200323BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFE0A511E3FC6A200323BCD /* LaunchScreen.storyboard */; };
+		4FFE0A5B1E3FC7D500323BCD /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFE0A5A1E3FC7D500323BCD /* Datos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4FFE0A4F1E3FC6A200323BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FFE0A521E3FC6A200323BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FFE0A541E3FC6A200323BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FFE0A5A1E3FC7D500323BCD /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				4FFE0A4F1E3FC6A200323BCD /* Assets.xcassets */,
 				4FFE0A511E3FC6A200323BCD /* LaunchScreen.storyboard */,
 				4FFE0A541E3FC6A200323BCD /* Info.plist */,
+				4FFE0A5A1E3FC7D500323BCD /* Datos.swift */,
 			);
 			path = Hamburguesas;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			files = (
 				4FFE0A4B1E3FC6A200323BCD /* ViewController.swift in Sources */,
 				4FFE0A491E3FC6A200323BCD /* AppDelegate.swift in Sources */,
+				4FFE0A5B1E3FC7D500323BCD /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				4FFE0A591E3FC6A200323BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

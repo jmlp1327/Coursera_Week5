@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,94 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Países y Hamburguesas" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee5-Eg-6Ay">
+                                <rect key="frame" x="0.0" y="20" width="375" height="95"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="38"/>
+                                <color key="textColor" red="1" green="0.60258812936383643" blue="0.094436518223404486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3qq-gJ-cra">
+                                <rect key="frame" x="16" y="311" width="112" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="OOZ-oQ-j2q"/>
+                                    <constraint firstAttribute="height" constant="75" id="xzs-Ak-gjm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y7S-7D-pes">
+                                <rect key="frame" x="239" y="394" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="eL4-zh-3Bx"/>
+                                    <constraint firstAttribute="height" constant="120" id="jA9-ti-EjC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWV-wM-wm5">
+                                <rect key="frame" x="58" y="115" width="260" height="181"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="lqL-9Y-ntS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="21"/>
+                                <state key="normal" title="Quiero una Hamburguesa!!!">
+                                    <color key="titleColor" red="0.001451583542" green="0.70336787560000003" blue="0.27623945680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="mostrarDatos" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucD-Dm-y6c"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQA-XV-W70">
+                                <rect key="frame" x="136" y="335" width="41.5" height="27.5"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.60258812939999995" blue="0.094436518220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e41-IG-WeY">
+                                <rect key="frame" x="93.5" y="440.5" width="137.5" height="27.5"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.60258812939999995" blue="0.094436518220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamb" translatesAutoresizingMaskIntoConstraints="NO" id="ES2-YN-2KE">
+                                <rect key="frame" x="87.5" y="115" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="UJc-C1-9Lg"/>
+                                    <constraint firstAttribute="height" constant="150" id="jYp-cX-OKs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74809426069259644" green="0.91049379110336304" blue="0.90726280212402344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ee5-Eg-6Ay" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8OW-Kn-NiR"/>
+                            <constraint firstItem="Y7S-7D-pes" firstAttribute="top" secondItem="3qq-gJ-cra" secondAttribute="bottom" constant="8" id="Ac5-yY-K1r"/>
+                            <constraint firstItem="ES2-YN-2KE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Add-ep-cPM"/>
+                            <constraint firstItem="yWV-wM-wm5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LIO-R3-Rkh"/>
+                            <constraint firstItem="e41-IG-WeY" firstAttribute="centerY" secondItem="Y7S-7D-pes" secondAttribute="centerY" id="R5t-w2-40H"/>
+                            <constraint firstItem="ES2-YN-2KE" firstAttribute="top" secondItem="ee5-Eg-6Ay" secondAttribute="bottom" id="ULi-0g-XsF"/>
+                            <constraint firstItem="3qq-gJ-cra" firstAttribute="top" secondItem="yWV-wM-wm5" secondAttribute="bottom" constant="15" id="W73-p8-k9x"/>
+                            <constraint firstItem="eQA-XV-W70" firstAttribute="centerY" secondItem="3qq-gJ-cra" secondAttribute="centerY" id="Ygc-Fd-WFc"/>
+                            <constraint firstItem="Y7S-7D-pes" firstAttribute="leading" secondItem="e41-IG-WeY" secondAttribute="trailing" constant="8" id="bKP-sZ-sw4"/>
+                            <constraint firstAttribute="trailing" secondItem="ee5-Eg-6Ay" secondAttribute="trailing" id="cCc-c1-APC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y7S-7D-pes" secondAttribute="trailing" id="d9k-I5-h5W"/>
+                            <constraint firstItem="ee5-Eg-6Ay" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fg6-By-lWs"/>
+                            <constraint firstItem="yWV-wM-wm5" firstAttribute="top" secondItem="ee5-Eg-6Ay" secondAttribute="bottom" id="hID-z7-P5y"/>
+                            <constraint firstItem="eQA-XV-W70" firstAttribute="leading" secondItem="3qq-gJ-cra" secondAttribute="trailing" constant="8" id="jGU-EK-gCE"/>
+                            <constraint firstItem="3qq-gJ-cra" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wNx-pY-X2m"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnQuieroUnaHamburguesa" destination="yWV-wM-wm5" id="pyE-h1-kLV"/>
+                        <outlet property="imgHamburguesa" destination="Y7S-7D-pes" id="04Q-4b-rc6"/>
+                        <outlet property="imgPais" destination="3qq-gJ-cra" id="9yR-sq-ZZx"/>
+                        <outlet property="lblHamburguesa" destination="e41-IG-WeY" id="hMj-qP-o3I"/>
+                        <outlet property="lblPais" destination="eQA-XV-W70" id="PCU-mf-YA1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hamb" width="800" height="600"/>
+    </resources>
 </document>
