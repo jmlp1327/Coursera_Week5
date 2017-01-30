@@ -25,14 +25,14 @@ class ColeccionDePaises {
 
 class ColeccionDeHamburguesa {
     
-    let hamburgueses : [String] = ["Criolla", "Bacon", "Queso", "Monster Egg", "Trufa", "Pollo Crujiente", "Mini", "Brie", "Aros", "Picante", "Emmental", "Tres Quesos", "Setas", "Búfalo", "Ternera", "Chuleta", "Casera", "Tres Carnes", "Doble Carne", "Deluxe"]
+    let hamburguesas : [String] = ["Criolla", "Bacon", "Queso", "Monster Egg", "Trufa", "Pollo Crujiente", "Mini", "Brie", "Aros", "Picante", "Emmental", "Tres Quesos", "Setas", "Búfalo", "Ternera", "Chuleta", "Casera", "Tres Carnes", "Doble Carne", "Deluxe"]
     
     init() {
         
     }
     
     func obtenHamburguesa() -> String {
-        return hamburgueses[Int(arc4random()) %  hamburgueses.count]
+        return hamburguesas[Int(arc4random()) %  hamburguesas.count]
     }
     
 }
